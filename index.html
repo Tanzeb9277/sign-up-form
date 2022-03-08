@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="splash">
+        <div class="logo">
+            <img src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png " alt="logo">
+            <div class="text">
+                <h1>ODIN</h1>
+            </div>
+        </div>
+    </div>
+    <div class="account">
+        <div class="desc">
+            <p>
+                This is not a real online service! You know you need something<br>
+                 like this in your life tp help you relize your deepest dreams.<br>
+                 Sign up <i>now</i> to get started.<br>
+                <br>
+                You <i>know</i> you want to.
+            </p>
+        </div>
+        <div class="sign-up">
+            <form action="sign-up" id="signUp-form">
+                <lable>First Name</lable>
+                <input type="text" required>
+                <lable>Last Name</lable>
+                <input type="text" required>
+                <lable>Email</lable>
+                <input type="email" required>
+                <lable>Phone Number</lable>
+                <input type="tel" required>
+                <lable>Password</lable>
+                <input type="password" required>
+                <p>*Passwords do nut match</p>
+                <lable>Confirm Password</lable>
+                <input type="password" required>
+            </form>
+        </div>
+        <div class="create-acc">
+            <button type="submit" form="signUp-form">Create Account</button>
+            <p>Already have an account? <a href="#">Log In</a></p>
+        </div>
+    </div>
+    
+</body>
+</html>
