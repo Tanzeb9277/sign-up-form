@@ -3,11 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--Styles and Fonts-->
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital@0;1&display=swap" rel="stylesheet">
+
+    <!--Scripts-->
     <script src="script.js" defer></script>
+
     <title>Document</title>
+
 </head>
 <body>
+<main>
     <div class="splash">
         <div class="logo">
             <img src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png " alt="logo">
@@ -27,20 +37,33 @@
             </p>
         </div>
         <div class="sign-up">
+            <h1>Let's Do it</h1>
             <form action="sign-up" id="signUp-form">
-                <lable>First Name</lable>
-                <input type="text" required>
-                <lable>Last Name</lable>
-                <input type="text" required>
-                <lable>Email</lable>
-                <input type="email" required>
-                <lable>Phone Number</lable>
-                <input type="tel" required>
-                <lable>Password</lable>
-                <input type="password" required>
-                <p>*Passwords do nut match</p>
-                <lable>Confirm Password</lable>
-                <input type="password" required>
+                <div class="form-item">
+                    <label>First Name</label>
+                    <input type="text" required>
+                </div>
+                <div class="form-item">
+                    <label>Last Name</label>
+                    <input type="text" required>
+                </div>
+                <div class="form-item">
+                    <label>Email</label>
+                    <input type="email" required>
+                </div>
+                <div class="form-item">
+                    <label>Phone Number</label>
+                    <input type="tel" required>
+                </div>
+                <div class="form-item">
+                    <label>Password</label>
+                    <input class="password" type="password" required>
+                    <p id="not-match">*Passwords does not match</p>
+                </div>
+                <div class="form-item">
+                    <label>Confirm Password</label>
+                    <input type="password" class="password" required>
+                </div>
             </form>
         </div>
         <div class="create-acc">
@@ -48,6 +71,7 @@
             <p>Already have an account? <a href="#">Log In</a></p>
         </div>
     </div>
+</main>
     
 </body>
 </html>
