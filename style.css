@@ -47,7 +47,7 @@ html{
     background-color: black;
 }
 body{
-    width: 70%;
+    width: calc(60% + 150px);
     margin: 0 auto;
     font-family: 'Rubik', sans-serif;
 }
@@ -83,13 +83,11 @@ main{
 
 .logo > .text{
     height: 90%;
-    width: 40%;
- 
 }
 
 .logo > .text > h1 {
     color: white;
-    font-size: 96px;
+    font-size: calc(2rem + 3vw);;
     margin: 20% 0;
 }
 
@@ -118,24 +116,30 @@ main{
 
 .sign-up > h1{
     padding: 10px 30px;
-    font-size: 30px;
+    font-size: calc(1vw + .45rem);
+}
+
+#signUp-form{
+    height: 77%;
 }
 
 
 .form-item{
-    width: 244px;
+    width: 31%;
+    height: 25%;
     padding: 10px 30px;
     display: inline-block;
 }
 
 .form-item > label{
     color: rgb(29, 29, 29);
+    font-size: calc(.5rem + .5vw);
 }
 
 
 .form-item > input{
     width: 100%;
-    height: 27px;
+    height: 50%;
     border: grey solid 1px;
     border-radius: 7px;
 }
@@ -148,21 +152,24 @@ input:focus {
 
 input[type = "password"]{
     outline: none;
-    border: red solid 1px;
+    
 }
 
+#password-container{
+    position: relative;
+}
 
 #not-match{
     display: none;
+    position: absolute;
     color: red;
     font-size: .8rem;
     padding-top: 3px;
 }
 
 
-
 .desc p{
-    font-size: 1.5rem;
+    font-size: calc(1vw + .2rem);
     padding: 100px 0 50px 70px;
 }
 
@@ -174,12 +181,25 @@ input[type = "password"]{
     background-color: #596D48;
     color: white;
     border: none;
-    font-size: 1.2rem;
+    font-size: calc(.8vw + .3rem);
     padding: 10px 40px;
     border-radius: 5px;
     box-shadow: 0 3px 5px -2px black;
 }
+
+.create-acc button:hover{
+    background-color: #89a76f;
+}
+
+.create-acc button:active{
+    box-shadow: none;
+}
+
 .create-acc a{
     margin: 0!Important;
     color: #596D48;
+}
+
+.create-acc p{
+    font-size: calc(.7vw + .2rem);
 }
